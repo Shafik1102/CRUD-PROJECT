@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1 style="text-align: center; background-color: blue; color: black; font-size: x-large;">BIKE DETAILS</h1>
+</head>
+<style>
+	table{
+		border-color: white;border-spacing: 10px;}
+	th{color: blue;border-color: white;}</style><center>	
+<body bgcolor="skyblue">
+	<h2 style="text-align: center; background-color: yellow; color:red" >BIKE LISTS</h2>
+	<table border="2">
+	<thead>
+		<th>SI NO</th>
+		<th>BIKE NAME</th>
+		<th>BIKE COLOUR</th>
+		<th>PRICE</th>
+		<th>UPDATE</th>
+		<th>DELTERE</th>
+	</thead>
+{%for i in b%}
+<tr>
+	<td>{{i.no}}</td>
+	<td>{{i.name}}</td>
+	<td>{{i.colour}}</td>
+	<td>{{i.price}}</td>
+	<td><a href="/update/{{i.id}}">Click</a></td>
+	<td><a href="/delete/{{i.id}}">Click</a></td>
+</tr>
+{%endfor%}
+</table>
+</body>
+</center>
+</html>

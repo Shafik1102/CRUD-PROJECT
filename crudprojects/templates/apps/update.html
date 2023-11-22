@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<h1 style="text-align: center;color: blue;font-size: x-large;">BIKE DETAILS</h1>
+</head>
+<style>
+	table{
+		border-color: white;border-spacing: 10px;}
+	th{color: blue;border-color: white;}</style><center>
+	}
+<body>
+<h2 style="color: red">UPDATE RECORDS</h2>
+<form method="POST" style="color: blue">
+	{%csrf_token%}
+	SI NO:<input type="text" name="no" value="{{b.no}}"><br>
+	BIKE NAME:<input type="text" name="name" value="{{b.name}}"><br>
+	COLOUR :<input type="text" name="colour" value="{{b.colour}}"><br>
+	PRICE:<input type="text" name="price" value="{{b.price}}"><br>
+
+	<input type="submit" value="UPDATE RECORDS">
+</form>
+</body>
+</center>
+</html>
